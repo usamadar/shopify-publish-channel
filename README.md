@@ -1,6 +1,6 @@
 # shopify-publish-channel
 
-Publish Shopify Products from one Channel to another. It will query all products published on <source channel> and publish them to <destination channel> only if unpublished. You will need ```.env``` file with following parameters
+Publish Shopify Products from one Channel to another. It will query all products published on source channel and publish them to destination channel only if unpublished. You will need ```.env``` file with following parameters
 
 ```
 SHOPIFY_ADMIN_API_KEY=<your_key>
