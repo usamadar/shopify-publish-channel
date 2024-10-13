@@ -77,8 +77,10 @@ const getUnpublishedProducts = async (sourcePublicationId, destinationPublicatio
 
       hasNextPage = response.data.data.products.pageInfo.hasNextPage;
       cursor = edges.length ? edges[edges.length - 1].cursor : null;
+      console.log('Fetched products to publish', response.data.data.products.edges.length);
     } catch (error) {
       console.error('Error fetching products:', error.response ? error.response.data : error.message);
+      console.log(error);
       throw error;
     }
   }
